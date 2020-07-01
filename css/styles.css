@@ -30,6 +30,14 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -235,6 +243,8 @@ ul {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .direction-cards {
@@ -375,6 +385,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 24px;
 }
 
 .button {
@@ -391,7 +402,9 @@ ul {
   font-size: 16px;
   line-height: 1.62;
 }
-
+.button:active {
+  border: 2px solid var(--accent-color);
+}
 .developed {
   display: flex;
   justify-content: center;
@@ -436,10 +449,9 @@ ul {
 }
 .card-content {
   box-sizing: border-box;
-  border-color: #eeeeee;
-  border-bottom: 1px;
-  border-right: 1px;
-  border-left: 1px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
