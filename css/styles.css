@@ -144,8 +144,18 @@ h4 {
   display: block;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--small-text-color);
+
   text-align: center;
+  background-image: linear-gradient(to right rgba(47, 48, 58, 0.8));
+  background-image: url(../images/Header.jpg);
+  background-color: var(--small-text-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -164,6 +174,7 @@ h4 {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
+  padding: 13px 29px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -216,6 +227,30 @@ h4 {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  background-position: center;
+  align-content: center;
+}
+
+.features-card::before {
+  display: block;
+  content: "";
+  background: #f5f4fa;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.features-card:nth-child(1)::before {
+  background-image: url(../images/Group.png);
+  background-size: 65px 70px;
+}
+.features-card:nth-child(2)::before {
+}
+.features-card:nth-child(3)::before {
+}
+.features-card:nth-child(4)::before {
 }
 .features-card:nth-child(4n) {
   margin-right: 0px;
@@ -281,7 +316,7 @@ h4 {
   text-decoration: none;
 
   color: var(--primary-white-color);
-  background-color: var(--small-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .teem {
   background-color: #f5f4fa;
@@ -389,8 +424,9 @@ h4 {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
   min-width: 200px;
+
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -404,6 +440,16 @@ h4 {
 }
 .button:active {
   border: 2px solid var(--accent-color);
+}
+.button.primary > .footer-icon {
+}
+.footer-link > .button.primary::after {
+  width: 24px;
+  height: 24px;
+  content: "";
+  margin-left: 10px;
+  background-image: url(../images/iconsend.png);
+  background-size: contain;
 }
 .developed {
   display: flex;
