@@ -141,13 +141,15 @@ h4 {
   margin-right: 10px;
 }
 .hero {
-  display: block;
   padding-top: 200px;
   padding-bottom: 200px;
 
   text-align: center;
-  background-image: linear-gradient(to right rgba(47, 48, 58, 0.8));
-  background-image: url(../images/Header.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header.jpg);
   background-color: var(--small-text-color);
   max-width: 1600px;
   height: 600px;
@@ -167,20 +169,86 @@ h4 {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
+.button-primary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px 32px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 
-.button.primary {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  min-width: 200px;
+}
+
+.button-primary:hover,
+.button-primary:focus {
   font-weight: 700;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button-primary:active {
+  border: 2px solid var(--accent-color);
+}
+.button-secondary {
+  display: inline-flex;
+  min-width: 200px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  padding: 13px 29px;
+  padding: 10px 29px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
 }
+.button-secondary::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/iconfly.svg);
+  background-size: contain;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  font-weight: 700;
+  border: 3px solid var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button-secondary:active {
+  border: 2px solid var(--accent-color);
+}
+
+.button {
+  display: inline-flex;
+  min-width: 200px;
+
+  text-align: center;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button:hover,
+.button:focus {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.button:active {
+  border: 2px solid var(--accent-color);
+}
+
 .filtr {
   display: flex;
   justify-content: center;
@@ -285,11 +353,23 @@ h4 {
 .direction-cards {
   display: flex;
   align-items: center;
-}
-.card {
-  text-align: center;
   margin-top: 50px;
   padding-bottom: 94px;
+}
+.card {
+  display: flex;
+  background-size: 370px 294px;
+  text-align: center;
+  justify-content: flex-end;
+}
+.card:nth-child(1) {
+  background-image: url(../images/nout.jpg);
+}
+.card:nth-child(1) {
+  background-image: url(../images/tel.jpg);
+}
+.card:nth-child(1) {
+  background-image: url(../images/comp.jpg);
 }
 .direction-cards .card + .card {
   margin-left: 30px;
@@ -423,26 +503,6 @@ h4 {
   padding-bottom: 24px;
 }
 
-.button {
-  display: inline-flex;
-  min-width: 200px;
-
-  text-align: center;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-.button:hover,
-.button:focus {
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-}
-.button:active {
-  border: 2px solid var(--accent-color);
-}
-.button.primary > .footer-icon {
-}
 .footer-link > .button.primary::after {
   width: 24px;
   height: 24px;
