@@ -32,17 +32,18 @@
         <address>
           <ul class="kompany-contacts">
             <li class="cont-item">
-              <img
-                src="./images/envelope(hover).png"
-                alt="Обозначение Почтового ящика"
-              />
+              <svg class="mail-icon">
+                  <use href="./images/sprite.svg#icon-mail">
+                </svg>
 
               <a class="kompany-contacts mail" href="mailto:info@example.com">
                 info@example.com</a
               >
             </li>
             <li class="cont-item">
-              <img src="./images/Vector(3).png" alt="Обозначение телефон" />
+              <svg class="phone-icon">
+                  <use href="./images/sprite.svg#icon-phone">
+                </svg>
               <a class="kompany-contacts phone" href="tel:+380991111111"
                 >+380991111111</a
               >
@@ -65,7 +66,10 @@
       <section class="section">
         <div class="container">
           <ul class="features">
-            <li class="features-card">
+            <li class="features-card"> <div class="svg-card">
+              <svg class="features-icon">
+                  <use href="./images/sprite.svg#icon-antenka">
+                </svg></div>
               <h3 class="features-title">Внимание к деталям</h3>
               <p class="features-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -73,6 +77,10 @@
               </p>
             </li>
             <li class="features-card">
+              <div class="svg-card">
+              <svg class="features-icon">
+                  <use href="./images/sprite.svg#icon-clock">
+                </svg></div>
               <h3 class="features-title">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -80,13 +88,20 @@
               </p>
             </li>
             <li class="features-card">
+              <div class="svg-card">
+              <svg class="features-icon">
+                  <use href="./images/sprite.svg#icon-diagram">
+                </svg></div>
               <h3 class="features-title">Планирование</h3>
               <p class="features-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-card">
+            <li class="features-card"><div class="svg-card">
+              <svg class="features-icon">
+                  <use href="./images/sprite.svg#icon-astronaut">
+                </svg></div>
               <h3 class="features-title">Современные технологии</h3>
               <p class="features-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -127,25 +142,29 @@
               <h3 class="names">Николай Кучеренко</h3>
               <p class="profession">Product Designer</p>
               <ul class="networks-links">
-                <li>
-                  <a href="" aria-label="Instagram link">
-                    <img class="img" src="./images/ellipse.png" alt=""
-                  /></a>
+                <li class="social-links">
+                  <a  href="" aria-label="Instagram link">
+                    <svg class="icon-social">
+                  <use href="./images/sprite.svg#icon-insta">
+                </svg></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Twitter link">
-                    <img class="img" src="./images/ellipse.png" alt=""
-                  /></a>
+                <li class="social-links">
+                  <a  href="" aria-label="Twitter link">
+                    <svg class="icon-social">
+                  <use href="./images/sprite.svg#icon-twitter">
+                </svg></a>
+                </li> 
+                <li class="social-links">
+                  <a  href="" aria-label="Facebook link">
+                    <svg class="icon-social">
+                  <use href="./images/sprite.svg#icon-fb">
+                </svg></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Facebook link">
-                    <img class="img" src="./images/ellipse.png" alt=""
-                  /></a>
-                </li>
-                <li>
+                <li class="social-links">
                   <a href="" aria-label="LinkedIn link">
-                    <img class="img" src="./images/ellipse.png" alt=""
-                  /></a>
+                    <svg class="icon-social">
+                  <use href="./images/sprite.svg#icon-in">
+                </svg></a>
                 </li>
               </ul>
             </li>
@@ -251,52 +270,40 @@
         <div class="container">
           <ul class="client-list">
             <li class="client-item">
-              <a href=""
-                ><img src="./images/rectangle9.png" alt="" /><span
-                  class="invisible"
-                  >box</span
-                ></a
-              >
+              <a class="client-link" href="">
+                <svg class="icon-box">
+                  <use href="./images/sprite.svg#icon-logo-1">
+                </svg></a>
             </li>
             <li class="client-item">
-              <a href=""
-                ><img src="./images/rectangle9.png" alt="" /><span
-                  class="invisible"
-                  >box</span
-                ></a
-              >
+              <a class="client-link" href="">
+                <svg class="icon-box">
+                  <use href="./images/sprite.svg#icon-logo-2">
+                </svg></a>
             </li>
             <li class="client-item">
-              <a href=""
-                ><img src="./images/rectangle9.png" alt="" /><span
-                  class="invisible"
-                  >box</span
-                ></a
-              >
+              <a class="client-link" href="">
+                <svg class="icon-box">
+                  <use href="./images/sprite.svg#icon-logo-3">
+                </svg></a>
+            </li>
+           <li class="client-item">
+              <a class="client-link" href="">
+                <svg class="icon-box">
+                  <use href="./images/sprite.svg#icon-logo-4">
+                </svg></a>
             </li>
             <li class="client-item">
-              <a href=""
-                ><img src="./images/rectangle9.png" alt="" /><span
-                  class="invisible"
-                  >box</span
-                ></a
-              >
+              <a class="client-link" href="">
+                <svg class="icon-box">
+                  <use href="./images/sprite.svg#icon-logo-5">
+                </svg></a>
             </li>
             <li class="client-item">
-              <a href=""
-                ><img src="./images/rectangle9.png" alt="" /><span
-                  class="invisible"
-                  >box</span
-                ></a
-              >
-            </li>
-            <li class="client-item">
-              <a href=""
-                ><img src="./images/rectangle9.png" alt="" /><span
-                  class="invisible"
-                  >box</span
-                ></a
-              >
+              <a class="client-link" href="">
+                <svg class="icon-box">
+                  <use href="./images/sprite.svg#icon-logo-6">
+                </svg></a>
             </li>
           </ul>
         </div>
@@ -354,7 +361,9 @@
             <b class="login">подпишитесь на рассылку</b>
             <b class="footer-link">email</b>
             <button class="button-secondary">
-              Подписаться <span class="footer-icon"></span>
+              Подписаться <svg class="icon-footer">
+                  <use href="./images/sprite.svg#icon-litachok">
+                </svg>
             </button>
           </div>
         </div>

@@ -108,6 +108,7 @@ h4 {
   display: flex;
   align-items: center;
 }
+
 .kompany-contacts .cont-item + .cont-item {
   margin-left: 30px;
 }
@@ -127,15 +128,35 @@ h4 {
 .kompany-contacts .item + .item {
   margin-left: 30px;
 }
+.kompany-contacts:hover {
+  color: var(--accent-color);
+}
 .mail {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--small-text-color);
   margin-left: 10px;
 }
 .phone {
   text-decoration: none;
   color: var(--small-text-color);
   margin-left: 10px;
+}
+.mail-icon {
+  fill: var(--small-text-color);
+  margin-right: 10px;
+  width: 16px;
+  height: 11.2px;
+}
+.phone-icon {
+  fill: var(--small-text-color);
+  margin-right: 10px;
+  width: 10px;
+  height: 14.94px;
+}
+.mail-icon:hover,
+.phone-icon:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 .img {
   margin-right: 10px;
@@ -211,14 +232,7 @@ h4 {
   border-radius: 4px;
   border-color: transparent;
 }
-.button-secondary::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url(../images/iconfly.svg);
-  background-size: contain;
-}
+
 .button-secondary:hover,
 .button-secondary:focus {
   font-weight: 700;
@@ -287,7 +301,7 @@ h4 {
   justify-content: space-between;
 }
 .features-card {
-  width: calc((100%-60px) / 3);
+  width: 270px;
   margin-right: 30px;
   padding-left: 0px;
 
@@ -298,27 +312,37 @@ h4 {
   background-position: center;
   align-content: center;
 }
-
-.features-card::before {
-  display: block;
-  content: "";
-  background: #f5f4fa;
-  background-size: contain;
-  background-repeat: no-repeat;
+.svg-card {
   height: 120px;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
   border-radius: 4px;
 }
 
-.features-card:nth-child(1)::before {
-  background-image: url(../images/Group.png);
-  background-size: 65px 70px;
+.features-icon {
+  fill: var(--small-text-color);
 }
-.features-card:nth-child(2)::before {
+.features-icon:hover {
+  fill: var(--accent-color);
 }
-.features-card:nth-child(3)::before {
+.features-icon:nth-child(1) {
+  weight: 65.32px;
+  height: 70px;
 }
-.features-card:nth-child(4)::before {
+.features-icon:nth-child(2) {
+  weight: 67px;
+  height: 70px;
+}
+
+.features-icon:nth-child(3) {
+  weight: 70px;
+  height: 53.69px;
+}
+.features-icon:nth-child(4) {
+  weight: 70px;
+  height: 70px;
 }
 .features-card:nth-child(4n) {
   margin-right: 0px;
@@ -442,14 +466,53 @@ h4 {
   display: flex;
   align-items: center;
 }
+
 .client-item {
-  margin-top: 50px;
+  display: flex;
+  color: var(--small-text-color);
+}
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 2px solid var(--small-text-color);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-white-color);
+  border-radius: 3px;
+  stroke: currentColor;
+  fill: currentColor;
+  text-decoration: none;
+}
+.client-link:hover {
+  border-color: var(--accent-color);
+
+  cursor: pointer;
 }
 .client-list .client-item + .client-item {
   margin-left: 30px;
 }
+.icon-box {
+  width: 44.27px;
+  height: 49.23px;
+  position: absolute;
+  fill: var(--small-text-color);
+  position: absolute;
+  align-content: center;
+  stroke-width: 0;
+}
+.icon-box:hover {
+  fill: var(--accent-color);
+}
 .invisible {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0000);
+  overflow: hidden;
 }
 .footer {
   background-color: #2f303a;
@@ -502,15 +565,32 @@ h4 {
   justify-content: center;
   padding-bottom: 24px;
 }
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+}
 
-.footer-link > .button.primary::after {
+.networks-links .social-links + .social-links {
+  margin-left: 10px;
+}
+.icon-social {
+  fill: var(--small-text-color);
+  width: 20px;
+  height: 20px;
+}
+.icon-footer {
+  fill: var(--primary-white-color);
   width: 24px;
   height: 24px;
-  content: "";
   margin-left: 10px;
-  background-image: url(../images/iconsend.png);
-  background-size: contain;
 }
+
 .developed {
   display: flex;
   justify-content: center;
@@ -534,6 +614,10 @@ h4 {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.work-item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .work-item a {
   text-decoration: none;
