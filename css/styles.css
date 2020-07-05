@@ -358,17 +358,19 @@ h4 {
 }
 .card {
   display: flex;
-  background-size: 370px 294px;
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
   text-align: center;
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 .card:nth-child(1) {
   background-image: url(../images/nout.jpg);
 }
-.card:nth-child(1) {
+.card:nth-child(2) {
   background-image: url(../images/tel.jpg);
 }
-.card:nth-child(1) {
+.card:nth-child(3) {
   background-image: url(../images/comp.jpg);
 }
 .direction-cards .card + .card {
@@ -382,6 +384,7 @@ h4 {
 
   width: 370px;
   height: 70px;
+  flex-shrink: 0;
 
   font-weight: 700;
   font-size: 14px;
