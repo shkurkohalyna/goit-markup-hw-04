@@ -161,6 +161,9 @@ h4 {
 .img {
   margin-right: 10px;
 }
+
+/* Герой */
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -190,6 +193,8 @@ h4 {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
+/* Кнопки */
+
 .button-primary {
   font-weight: 500;
   font-size: 16px;
@@ -263,37 +268,7 @@ h4 {
   border: 2px solid var(--accent-color);
 }
 
-.filtr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 56px;
-}
-.filtr .button {
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 1.62;
-  min-width: 73px;
-  border-radius: 4px;
-  border-color: transparent;
-  vertical-align: middle;
-  color: var(--primary-text-color);
-  background-color: #f5f4fa;
-  margin-right: 10px;
-}
-.filtr .button:focus,
-.filtr .button:hover {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-
-.filtr .button:active {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
+/* Переваги */
 
 .features {
   display: flex;
@@ -373,6 +348,7 @@ h4 {
   margin-top: 94px;
   margin-bottom: 50px;
 }
+/* Дірекшн */
 
 .direction-cards {
   display: flex;
@@ -398,12 +374,7 @@ h4 {
 .direction-cards .card + .card {
   margin-left: 30px;
 }
-.dir-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-}
+
 .directions {
   display: inline-flex;
   align-items: center;
@@ -422,6 +393,8 @@ h4 {
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
+/* Команда */
+
 .teem {
   background-color: #f5f4fa;
 }
@@ -437,11 +410,12 @@ h4 {
   text-align: center;
 
   background: var(--primary-white-color);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-
+.name-item:hover {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
 .names {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -457,6 +431,36 @@ h4 {
   line-height: 1.2;
   color: var(--small-text-color);
 }
+/* Соцмережі */
+
+.networks-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.social-links {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-white-color);
+
+  width: 44px;
+  height: 44px;
+}
+.icon-social {
+  fill: var(--small-text-color);
+  width: 44px;
+  height: 44px;
+}
+.link1 {
+}
+.networks-links .social-links + .social-links {
+  margin-left: 10px;
+}
+
+/* Клієнти */
 
 .container > .clients {
   padding-top: 94px;
@@ -514,6 +518,8 @@ h4 {
   clip: rect(0000);
   overflow: hidden;
 }
+/* Футер */
+
 .footer {
   background-color: #2f303a;
 }
@@ -559,31 +565,7 @@ h4 {
   color: var(--primary-white-color);
   text-transform: uppercase;
 }
-.networks-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 24px;
-}
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-white-color);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  text-decoration: none;
-}
 
-.networks-links .social-links + .social-links {
-  margin-left: 10px;
-}
-.icon-social {
-  fill: var(--small-text-color);
-  width: 20px;
-  height: 20px;
-}
 .icon-footer {
   fill: var(--primary-white-color);
   width: 24px;
@@ -604,6 +586,40 @@ h4 {
   margin-bottom: 0px;
   padding-top: 18px;
   padding-bottom: 21px;
+}
+
+/* Портфоліо */
+
+.filtr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.filtr .button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+  min-width: 73px;
+  border-radius: 4px;
+  border-color: transparent;
+  vertical-align: middle;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  margin-right: 10px;
+}
+.filtr .button:focus,
+.filtr .button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.filtr .button:active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 .our-works {
   display: flex;
