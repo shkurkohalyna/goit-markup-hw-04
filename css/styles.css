@@ -397,7 +397,9 @@ h4 {
   background-color: rgba(47, 48, 58, 0.8);
 }
 /* Команда */
-
+.comand {
+  margin-top: 0px;
+}
 .teem {
   background-color: #f5f4fa;
 }
@@ -448,16 +450,19 @@ h4 {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-white-color);
-
-  width: 44px;
-  height: 44px;
 }
 .icon-social {
+  display: block;
+  justify-content: center;
+  align-items: center;
   fill: var(--small-text-color);
   width: 44px;
   height: 44px;
 }
 .link1 {
+  display: flex;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 .networks-links .social-links + .social-links {
   margin-left: 10px;
@@ -482,7 +487,7 @@ h4 {
   display: flex;
   width: 170px;
   height: 90px;
-  border: 2px solid var(--small-text-color);
+
   justify-content: center;
   align-items: center;
   background-color: var(--primary-white-color);
@@ -491,26 +496,27 @@ h4 {
   fill: currentColor;
   text-decoration: none;
 }
-.client-link:hover {
-  border-color: var(--accent-color);
 
+.icon-box:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
   cursor: pointer;
 }
 .client-list .client-item + .client-item {
   margin-left: 30px;
 }
 .icon-box {
+  display: block;
+  border: 2px solid var(--small-text-color);
   width: 44.27px;
   height: 49.23px;
-  position: absolute;
+
   fill: var(--small-text-color);
   position: absolute;
   align-content: center;
   stroke-width: 0;
 }
-.icon-box:hover {
-  fill: var(--accent-color);
-}
+
 .invisible {
   position: absolute;
   width: 1px;
@@ -578,7 +584,7 @@ h4 {
 
 .developed {
   display: flex;
-  justify-content: center;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
