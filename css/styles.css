@@ -451,13 +451,19 @@ h4 {
   display: block;
   justify-content: center;
   align-items: center;
-  fill: var(--small-text-color);
+  fill: #afb1b8;
 
+  width: 20px;
+  height: 20px;
+}
+.link1:hover {
+  fill: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+.link1 {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-}
-.link1 {
   fill: var(--primary-white-color);
 }
 .networks-links .social-links + .social-links {
@@ -487,7 +493,7 @@ h4 {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-white-color);
-  border-radius: 3px;
+
   stroke: currentColor;
   fill: currentColor;
   text-decoration: none;
@@ -504,9 +510,9 @@ h4 {
 .icon-box {
   display: block;
   border: 2px solid var(--small-text-color);
-  width: 44.27px;
-  height: 49.23px;
-
+  width: 170px;
+  height: 90px;
+  padding: 20px 30px;
   fill: var(--small-text-color);
   position: absolute;
   align-content: center;
