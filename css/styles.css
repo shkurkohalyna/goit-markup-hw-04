@@ -3,6 +3,7 @@
   --small-text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --svg-color: #afb1b8;
 }
 
 html {
@@ -158,9 +159,6 @@ h4 {
   fill: var(--accent-color);
   cursor: pointer;
 }
-.img {
-  margin-right: 10px;
-}
 
 /* Герой */
 
@@ -297,28 +295,12 @@ h4 {
 }
 
 .features-icon {
-  fill: var(--small-text-color);
+  fill: var(--primary-text-color);
 }
 .features-icon:hover {
   fill: var(--accent-color);
 }
-.features-icon:nth-child(1) {
-  weight: 65.32px;
-  height: 70px;
-}
-.features-icon:nth-child(2) {
-  weight: 67px;
-  height: 70px;
-}
 
-.features-icon:nth-child(3) {
-  weight: 70px;
-  height: 53.69px;
-}
-.features-icon:nth-child(4) {
-  weight: 70px;
-  height: 70px;
-}
 .features-card:nth-child(4n) {
   margin-right: 0px;
 }
@@ -445,27 +427,29 @@ h4 {
   padding-bottom: 24px;
   text-decoration: none;
 }
-
-.icon-social {
-  background-size: contain;
-  display: block;
-  justify-content: center;
+.link1 {
+  text-decoration: none;
+  display: flex;
   align-items: center;
-  fill: #afb1b8;
-
-  width: 20px;
-  height: 20px;
-}
-.link1:hover {
-  fill: var(--accent-color);
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--svg-color);
   background-color: var(--primary-white-color);
 }
-.link1 {
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  fill: var(--primary-white-color);
+/* a {
+  text-decoration: none;
+} */
+.icon-social {
+  fill: currentColor;
 }
+
+.link1:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .networks-links .social-links + .social-links {
   margin-left: 10px;
 }
@@ -483,7 +467,7 @@ h4 {
 
 .client-item {
   display: flex;
-  color: var(--small-text-color);
+  color: var(--svg-color);
 }
 .client-link {
   display: flex;
@@ -509,11 +493,11 @@ h4 {
 }
 .icon-box {
   display: block;
-  border: 2px solid var(--small-text-color);
+  border: 2px solid var(--svg-color);
   width: 170px;
   height: 90px;
   padding: 20px 30px;
-  fill: var(--small-text-color);
+  fill: var(--svg-color);
   position: absolute;
   align-content: center;
   stroke-width: 0;
@@ -583,7 +567,13 @@ h4 {
   height: 24px;
   margin-left: 10px;
 }
-
+.endof > .link1 {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.endof > .link1:hover {
+  background-color: var(--accent-color);
+}
 .developed {
   display: flex;
   align-items: center;
